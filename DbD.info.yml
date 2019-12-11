@@ -1,0 +1,10 @@
+name: DbD
+type: theme
+#base theme: classy
+description: '自己开发的主题'
+#package: Core
+version: VERSION
+core: 8.x
+screenshot: screenshot.png
+libraries:
+  - DbD/global-styling
