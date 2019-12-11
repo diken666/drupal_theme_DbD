@@ -8,3 +8,12 @@ core: 8.x
 screenshot: screenshot.png
 libraries:
   - DbD/global-styling
+
+regions:
+  header: 'Header'
+  mymenu: 'Navigation'
+  content: 'Content'
+  siderbar_first: 'Siderbar First'
+  footer: 'Footer'
+  page_top: 'Page Top'
+  page_bottom: 'page Bottom'
