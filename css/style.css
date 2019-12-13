@@ -1,4 +1,8 @@
 
+body, html, ul, li{
+	margin: 0;
+	padding: 0
+}
 ul {
   margin: 0;
   padding: 0;
@@ -7,3 +11,19 @@ li {
   list-style: none;
 }
 
+.mymenu {
+	width: 90%;
+	height: 40px;
+	background: red;
+	margin: 0 auto;
+}
+.mymenu li {
+	display: inline-block;
+}
+.layout-sidebar-first{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	background: green;
+	float: left;
+}

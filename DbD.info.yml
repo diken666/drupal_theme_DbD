@@ -13,7 +13,7 @@ regions:
   header: 'Header'
   mymenu: 'Navigation'
   content: 'Content'
-  siderbar_first: 'Siderbar First'
+  sidebar_first: 'Sidebar First'
   footer: 'Footer'
   page_top: 'Page Top'
   page_bottom: 'page Bottom'
