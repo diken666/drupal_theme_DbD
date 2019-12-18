@@ -48,12 +48,15 @@
     {{ page.header }}
   </header>
 
-  {% if page.mymenu %}
-    <div id="mymenu" class="content">
-      {{ page.mymenu }}
+  <div class="banner">
+
+  </div>
+
+  {% if page.banner %}
+    <div class="banner">
+
     </div>
   {% endif %}
-
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
@@ -63,7 +66,7 @@
     </div>{# /.layout-content #}
 
   </main>
-  {#  引入自定义twig文件 #}
+
   {% include '@DbD/custom-footer.html.twig' %}
 
 </div>{# /.layout-container #}
