@@ -1,0 +1,36 @@
+body, html, ul, li, p{
+  margin: 0;
+  padding: 0
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:visited, a:active {
+  color: black;
+  text-decoration: none;
+  border: none;
+  user-select: none;
+}
+
+.btn {
+  box-sizing: border-box;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.blue {
+  background: #2288cc;
+}
+
+.mb-90{
+  margin-bottom: 90px;
+}

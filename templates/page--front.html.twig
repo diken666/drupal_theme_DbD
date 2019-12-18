@@ -44,27 +44,33 @@
 #}
 <div class="layout-container">
 
-  <header role="banner">
+  <header role="header">
     {{ page.header }}
   </header>
 
-  <div class="banner">
-
+  <div class="banner" role="main">
+    <div class="banner-board">
+      {% if page.banner %}
+        {{ page.banner }}
+      {% else %}
+        事例文字
+        <button class="btn blue">事例按钮</button>
+      {% endif %}
+    </div>
   </div>
 
-  {% if page.banner %}
-    <div class="banner">
-
+  <div class="block">
+    <div class="block-title">文章分享</div>
+    <div class="block-ctn">
+      {{ page.article_share }}
     </div>
-  {% endif %}
+  </div>
 
   <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
+    <a id="main-content" tabindex="-1"></a>
     <div class="layout-content">
       {{ page.content }}
-    </div>{# /.layout-content #}
-
+    </div>
   </main>
 
   {% include '@DbD/custom-footer.html.twig' %}
