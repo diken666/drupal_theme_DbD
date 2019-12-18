@@ -32,7 +32,7 @@
     {% if menu_level == 0 %}
       <ul{{ attributes.addClass('nav') }}>
     {% else %}
-      <ul>
+      <ul{{ attributes.addClass('nav-item') }}>
     {% endif %}
     {% for item in items %}
       <li{{ item.attributes }}>
