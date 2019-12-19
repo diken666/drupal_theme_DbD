@@ -4,5 +4,7 @@ global-styling:
     theme:
       css/style.css: {}
       css/global.css: {}
+      css/swiper.min.css: {}
   js:
+    js/swiper.min.js: {}
     js/main.js: {}
