@@ -27,12 +27,13 @@
 {{ menus.menu_links(items, attributes, 0) }}
 
 {% macro menu_links(items, attributes, menu_level) %}
+  {{ title_prefix }}
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('nav') }}>
+      <ul{{ attributes.addClass('my-menu') }}>
     {% else %}
-      <ul{{ attributes.addClass('nav-item') }}>
+      <ul{{ attributes.removeClass('my-menu').addClass('my-menu-item') }}>
     {% endif %}
     {% for item in items %}
       <li{{ item.attributes }}>

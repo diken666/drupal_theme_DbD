@@ -76,24 +76,26 @@
 
   {{ title_prefix }}
   {% if label and not page %}
-    <h2{{ title_attributes }}>
+    <p{{ title_attributes.addClass("article-title") }}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
+    </p>
   {% endif %}
   {{ title_suffix }}
+  <div class="article-container">
+    {% if display_submitted %}
+      <footer class="article-footer">
+        {{ author_picture }}
+        <div{{ author_attributes }}>
+          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+          {{ metadata }}
+        </div>
+      </footer>
+    {% endif %}
 
-  {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
-
-  <div{{ content_attributes }}>
-    {{ content }}
+    <div{{ content_attributes.addClass("article-ctn") }}>
+      {{ content }}
+    </div>
   </div>
+
 
 </article>

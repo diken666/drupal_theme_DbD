@@ -59,17 +59,13 @@
     </div>
   </div>
 
-  <div class="block">
-    <div class="block-title">文章分享</div>
-    <div class="block-ctn">
-      {{ page.article_share }}
-    </div>
-  </div>
-
   <main role="main">
     <a id="main-content" tabindex="-1"></a>
     <div class="layout-content">
+      <div class="block-title">文章分享</div>
       {{ page.content }}
+      <div class="block-title">图片分享</div>
+      {{ page.picture_share }}
     </div>
   </main>
 

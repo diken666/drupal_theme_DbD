@@ -3,38 +3,60 @@
   color: #d92cf9 !important;
 }
 main[role=main], div[role=main]{
-  margin-top: 90px;
+  /*margin-top: 90px;*/
 }
 header[role=header]{
   position: fixed;
-  top: 0;
+  /*top: 0;*/
   width: 100%;
   height: 90px;
   background: #fff;
   z-index: 100;
+  box-shadow: 0 3px 15px rgba(0,0,0,.2);
 }
 .header {
   width: 1170px;
+  height: 90px;
   margin: 0 auto;
 }
 #block-dbd-branding {
   float: left;
 }
 
-.nav{
-  float: right;
-  height: 100px;
-  line-height: 100px;
+#block-views-block-picture-share-block-1 {
+  margin: 10px 60px;
+  text-align: center;
 }
-.nav li {
+
+.my-menu{
+  position: relative;
+  float: right;
+  height: 90px;
+  line-height: 90px;
+  user-select: none;
+}
+.my-menu > li {
   display: inline-block;
 }
-.nav li a{
+.my-menu  li  a{
   color: #6f6f6f;
   padding: 0 20px;
 }
-.nav li a:hover {
+.my-menu li a:hover {
   color: #d92cf9;
+}
+
+.my-menu-item {
+  position: absolute;
+  padding: 10px 0;
+  top: 100%;
+  display: none;
+  border-top: 1px solid #888ea5;
+  background: #e6e6e6;
+}
+.my-menu-item li {
+  height: 25px;
+  line-height: 25px;
 }
 .header img {
   margin: 15px 0;
@@ -74,6 +96,7 @@ header[role=header]{
   height: 100px;
   font-size: 24px;
   color: #43485c;
+  border-top: 1px solid #e5ebf2;
   border-bottom: 1px solid #e5ebf2;
 }
 .block-ctn{
@@ -82,6 +105,29 @@ header[role=header]{
   margin: 30px auto;
 }
 
+.article-title{
+  font-size: 20px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.article-title a {
+  color: #4d4c4c !important;
+}
+.article-container {
+  margin: 10px 60px;
+}
+.article-footer {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 20px;
+  text-align: right;
+}
+.article-ctn p {
+  text-indent: 2rem;
+  color: #6f6f6f;
+  margin: 10px 0;
+}
 
 
 .footer{

@@ -12,8 +12,8 @@ libraries:
 regions:
   header: 'Header'
   banner: 'Banner'
-  article_share: 'Article Share'
   content: 'Content'
+  picture_share: 'Picture Share'
   sidebar_first: 'Sidebar First'
   footer: 'Footer'
   page_top: 'Page Top'

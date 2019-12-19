@@ -1,4 +1,4 @@
-body, html, ul, li, p{
+body, html, ul, li, p, a{
   margin: 0;
   padding: 0
 }
@@ -31,6 +31,3 @@ a, a:visited, a:active {
   background: #2288cc;
 }
 
-.mb-90{
-  margin-bottom: 90px;
-}
